@@ -1,4 +1,5 @@
 ///////////////////////////////////////////////////////////////////
+//Ru
 //Задание 1. Итераторы
 //Реверсивные итераторы. Сформируйте set<Point>. Подумайте, что +
 //нужно перегрузить в классе Point. Создайте вектор, элементы которого 
@@ -11,10 +12,27 @@
 //back_inserter()
 //front_inserter()
 //inserter()
-//итераторов вставки добавьте элементы в любой из созданных контейнеров. Подумайте:
-//какие из итераторов вставки можно использовать с каждым контейнером.
+//итераторов вставки добавьте элементы в любой из созданных контейнеров.
+
+//En
+//Task 1. Iterators.
+//Reverse iterators. Create a set<Point>. Think about
+//what to overload in the Point class. Create a vector whose elements
+//a copies of set elements, but are sorted in descending order
+
+//Stream iterators/ Using ostream_iterator, output the contents od vector and
+//set from the previous job to the screen.
+
+
+//Iterators of the insertion. Using the insertion iterators returnes by
+//fynctions:
+//back_inserter()
+//front_inserter()
+//inserter()
+//Add elements to any of the created containers.
 
 ///////////////////////////////////////////////////////////////////
+//Ru
 //Задание 2. Обобщенные алгоритмы (заголовочный файл <algorithm>). Предикаты.
 
 // алгоритм for_each() - вызов заданной функции для каждого элемента любой последовательности +
@@ -23,16 +41,16 @@
 //распечатайте значения элементов
 //Подсказка : неплохо вызываемую функцию определить как шаблон
 //С помощью алгоритма for_each в любой последовательности с элементами типа Point +
-//измените "координаты" на указанное значение (такой предикат тоже стоит реализовать 
+//измените "координаты" на указанное значение (такой предикат тоже стоит реализовать
 //как шаблон) и выведите результат с помощью предыдущего предиката
 
 //С помощью алгоритма find() найдите в любой последовательности элементов Point +
 //все итераторы на элемент Point с указанным значением.
 
 //С помощью алгоритма sort() отсортируйте любую последовательность элементов Point.  +
-////По умолчанию алгоритм сортирует последовательность по возрастанию.
+//По умолчанию алгоритм сортирует последовательность по возрастанию.
 //Что должно быть определено в классе Point? +
-// Замечание: обобщенный алгоритм sort не работает со списком, так как +
+//Замечание: обобщенный алгоритм sort не работает со списком, так как +
 //это было бы не эффективно => для списка сортировка реализована методом класса!!! 
 
 //С помощью алгоритма find_if() найдите в любой последовательности элементов Point +
@@ -51,12 +69,54 @@
 //Заполните list объектами string. С помощью алгоритма transform сформируте
 //значения "пустого" set, конвертируя строки в нижний регистр
 
-// map
+//map
 //Сформируйте любым способом вектор с элементами типа string.
 //Создайте (и распечатайте для проверки) map<string, int>, который будет
 //содержать упорядоченные по алфавиту строки и
 //количество повторений каждой строки в векторе
 
 // Iter_Alg.cpp : Defines the entry point for the console application.
-//
 
+//En
+//Task 2. Abstract algorithms (header file <algorithm>). Predicates.
+
+//Algorihm for_each() - call a defined function for each element of any sequence
+//(array, vector, list...)
+//Using the for_each algorithm in any sequence, with elements of any type
+//print out the values of the elements
+//Hint: Define a well is defined function as a template
+//Using the for_each algorithmin any sequence with Point elements,
+//change the "coordinates" to the specified value (such a predicate should also
+//be implemented as a template)
+//and output the result with the previous predicate
+
+//Using the find() algorithm, find in any sequence of Point elements
+//all the iterators on the Point element with the specified value
+
+//Using the sort() algorithm, sort any sequence of Point elements Point.
+//By default, the algorithm sorts the sequence in ascending oeder.
+//What should be defined in the Point class?
+//Note: the generic sort algorithm dose not work woth the list,
+//since it would not be effective => for the list, sorting is implemented by
+//class method !!!
+
+//Using the find_if() algorithm, in any sequence of Point elementss,
+//find an iterators on the Point element that satisfies the condition:
+//the x and y coordinates lie in the interval [-n, +m].
+
+//Using the sort() algorithm, sort any sequence of Rect elements by placing
+//rectangles to range of the center from the origin.
+
+//transform
+//Write a function that transforns the contents of the string object to
+//lowercase using the algorithm transform.
+//Hint: the string class is an "almost" container, so the methods
+//begin() and end() are defined for him.
+
+//Fill the list with string objects. Using the transfotm algorithm, form values
+//of the "empty" set, converting string in lowercase.
+
+//map
+Form in any way a vector with elements of type string.
+Create (and print to test) map <string, int>, which will contai the
+alphadetically ordered rows and the number of repeat each rows in the vector.
